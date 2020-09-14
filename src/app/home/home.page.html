@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-list>
+  <ion-item  *ngFor="let user of userArray;" (click)="onListTapped(user)">
+    <ion-avatar slot="start">
+     <img src={{user.avatar}}>
+    </ion-avatar>
+    <ion-label>
+      <p id="ph">{{user.first_name}}&nbsp;{{user.last_name}}</p>
+      <p id="pst">{{user.email}}</p>
+    </ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>

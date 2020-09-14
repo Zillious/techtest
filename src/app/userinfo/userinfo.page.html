@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div style="height:300px;text-align: center;margin: 5px;">
+<ion-avatar style="width:150px;height:150px;margin: auto">
+  <img src={{userInfo.avatar}}>
+</ion-avatar>
+<p style="font-size:24px;">
+  {{userInfo.first_name}}&nbsp;{{userInfo.last_name}}
+</p>
+<p style="font-size:14px;">{{userInfo.email}}</p>
+<p style="font-size:14px;">{{companyInfo.company}}</p>  
+<a href={{companyInfo.url}} style="font-size:14px;"><i class="fas fa-globe-europe"></i>&nbsp; Website</a>
+<p style="font-size:10px;">{{companyInfo.text}}</p>
+</div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "railrecipetest",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
